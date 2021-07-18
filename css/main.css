@@ -1,0 +1,177 @@
+
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0; /*retirando formatação do navegador*/
+    padding: 0; /*retirando formatação do navegador*/
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta); /*colocando a cor da root no fundo da página*/
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container-fluid{
+    display: flex; /*trouxe os links pro lado da palavra Netflix*/
+    flex-direction: row;
+    align-items: center; /*touxe os links + pra baixo, centralizando*/
+    justify-content: space-between; /*dá espaço entre Netflix e os links*/
+    margin-top: 8px; /*afasta os elementos do container do topo da pág*/
+    margin-bottom: 8px; 
+}
+
+header .logo{
+    color: var(--vermelho); /*colocando a cor da root no texto Netflix*/
+    font-family: "Bebas Neue", 'Arial Black', Times;
+    font-size: 40px;
+    letter-spacing: 10px; /*criando espaçamento entre as letras do texto Netflix*/
+    margin-left: 50px; /*afasta o texto Netflix do canto esquerdo*/
+}
+
+@font-face{
+    font-family: "Bebas Neue";
+    src: url("/font/BebasNeue-Regular.ttf") format("truetype"),
+        url("/font/BebasNeue-Regular.otf") format("opentype");
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px; /*dá um espaço entre os links*/
+}
+
+header nav a:hover{
+    color: #AAA;
+}
+
+
+.filme-principal{
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50)100%),url("/img/Loki-capa.jpg");
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container-fluid{
+    margin-left: 50px; /*trazendo os elementos mais para a direita*/
+    width: 70%;
+}
+
+.filme-principal .sinopse{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(41, 37, 37, 0.5); /*criando camada opaca*/
+    border: none; /*retirando a borda*/
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.minha-lista .minha{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.heroes .heroe{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+    margin-left: 50px;
+}
+
+/*
+main .tit{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 8px;
+    align-items: center;
+    font-size: 50px;
+}
+
+main .t1{
+    font-family: "Terminator Real NFI";
+}
+
+@font-face{
+    font-family: "Terminator Real NFI";
+    src: url("/font/terminatoreal.ttf") format("truetype"),
+        url("/font/terminatoreal.otf") format("opentype");
+}
+
+main .t2{
+    font-family: "Cloister Black";
+    margin-left: 10px;
+    font-size: 70px;
+}
+
+@font-face{
+    font-family: "Cloister Black";
+    src: url("/font/CloisterBlack.ttf") format("truetype");
+}
+
+main .t3{
+    font-family: "ARB";
+    margin-right: 15px;
+}
+
+@font-face{
+
+    font-family: "ARB";
+    src: url("/font/ARB85.ttf") format("truetype"),
+        url("/font/ARB85.otf") format("opentype");
+}
+
+main .t4{
+    font-family: "Cloister Black";
+}
+
+@font-face{
+    font-family: "Cloister Black";
+    src: url("/font/CloisterBlack.ttf") format("truetype");
+}*/
